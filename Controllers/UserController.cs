@@ -69,7 +69,7 @@ namespace CegautokAP.Controllers
         }
 
         [HttpPost("NewUser")]
-        public IActionResult NewUser()
+        public IActionResult NewUser(User user)
         {
             using (var context = new CegautokAPI.Models.FlottaContext())
             {
